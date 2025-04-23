@@ -48,7 +48,6 @@ jobs:
       - name: Start dfx
         run: |
           dfx start --background
-          dfx stop
 
       - run: npm run ci
         env:
