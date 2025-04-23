@@ -6,7 +6,7 @@
   "scripts": {
     "generate-candid": "./scripts/generate-candid.sh",
     "test": "vitest -c tests/vitest.config.ts --root .",
-    "preci": "dfx generate",
+    "preci": "dfx generate && dfx build",
     "ci": "vitest run -c tests/vitest.config.ts --root ."
     
   },
