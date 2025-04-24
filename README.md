@@ -128,6 +128,34 @@ This template serves as a learning resource for:
 - CI/CD integration
 - Project structure best practices
 
+### Testing GitHub Copilot Integration
+
+You can test the GitHub Copilot integration by asking it to implement a new function in the counter example. Here's how:
+
+1. Open the `src/vibe_coding_template_backend/src/lib.rs` file
+2. Position your cursor at the end of the file, before the `export_candid!();` line
+3. Type a comment prompting Copilot to create the function:
+   ```rust
+   // Add a function to decrease the counter value
+   ```
+4. Wait for Copilot to suggest the implementation or press Ctrl+Enter to invoke suggestions
+5. Accept the suggestion, which should look similar to:
+   ```rust
+   #[ic_cdk::update]
+   fn decrease() -> u64 {
+       COUNTER.with(|counter| {
+           let val = counter.borrow().saturating_sub(1);
+           *counter.borrow_mut() = val;
+           val
+       })
+   }
+   ```
+6. Copilot will also help you:
+   - Generate appropriate tests in `tests/src/vibe_coding_template_backend.test.ts`
+   - Create a changelog entry in `CHANGELOG.md`
+
+This simple example demonstrates how Copilot understands the project structure, coding patterns, and documentation requirements.
+
 ## Status
 
 This template is actively maintained and expanded. Contributions and suggestions are welcome!

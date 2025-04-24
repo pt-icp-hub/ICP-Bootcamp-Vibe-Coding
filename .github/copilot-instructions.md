@@ -30,7 +30,7 @@ fn get_user_data(user_id: String) -> Option<UserData> {
 After adding a new function, always run the following command in the terminal:
 
 ```
-dfx generate
+npm run generate-candid <CANISTER_NAME> && dfx generate
 ```
 
 ### Writing Tests for Canister Functions
