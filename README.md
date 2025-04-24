@@ -91,6 +91,34 @@ The GitHub workflows automatically:
 
 This ensures code quality is maintained throughout development.
 
+## GitHub Copilot Integration
+
+This project includes custom instructions for GitHub Copilot to enhance development productivity. When using GitHub Copilot with this repository, it will automatically:
+
+- **Generate Tests** for new canister functions following our testing patterns
+- **Update the Changelog** with entries for new features in the proper format
+- **Follow ICP Best Practices** when suggesting code for canister development
+
+### How It Works
+
+The repository contains a `.github/copilot-instructions.md` file that provides Copilot with context about:
+
+1. **Canister Function Implementation**: Proper annotations for query and update functions
+2. **Test Structure**: PocketIC testing patterns with proper setup/teardown hooks
+3. **Changelog Format**: Keep a Changelog format for documenting changes
+
+This ensures consistent code quality and documentation across the project without having to manually remind contributors of these standards.
+
+### Example
+
+When you write a new function in `lib.rs`, Copilot will suggest:
+
+- Appropriate test cases in the test files
+- Changelog entries in the correct format
+- Proper Rust annotations and patterns for ICP development
+
+No additional configuration is needed - these instructions are automatically applied whenever you use Copilot within this repository.
+
 ## Learning Resources
 
 This template serves as a learning resource for:

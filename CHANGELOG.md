@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add set_count update method to allow setting the counter to a specific value
+
 ## [0.1.0] - 2025-04-24
 
 ### Added
@@ -20,3 +22,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Vitest test runner configuration
 - GitHub CI workflow for automated end-to-end tests for all methods
 - Project documentation
+- Add custom instructions for github copilot
