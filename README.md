@@ -104,6 +104,10 @@ This template serves as a learning resource for:
 
 This template is actively maintained and expanded. Contributions and suggestions are welcome!
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a list of all changes and releases.
+
 ## License
 
 [MIT](LICENSE)
