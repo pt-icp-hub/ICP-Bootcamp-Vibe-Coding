@@ -12,8 +12,8 @@
       "onAutoForward": "openBrowser"
     }
   },
-  "onCreateCommand": "chmod +x scripts/setup.sh",
-  "postCreateCommand": "./scripts/setup.sh",
+  "onCreateCommand": "chmod +x scripts/dev-container-setup.sh",
+  "postCreateCommand": "./scripts/dev-container-setup.sh",
   "customizations": {
     "vscode": {
       "extensions": [
