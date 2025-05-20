@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add frontend development server scripts (`npm run dev`)
 - Add LLM canister implementation
 
+### Fixed
+
+- Fix React testing warnings by properly wrapping state updates in act()
+- Update component tests to follow React best practices
+
 ## [0.1.0] - 2025-04-24
 
 ### Added
